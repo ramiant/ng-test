@@ -1,0 +1,9 @@
+<label for="grid-size">Page size:</label>
+<select
+  id="grid-size"
+  (change)="onPageSizeChange($event)"
+>
+  <option *ngFor="let option of range" [value]="option">
+    {{option}}
+  </option>
+</select>

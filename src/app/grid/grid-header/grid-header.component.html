@@ -1,0 +1,11 @@
+<tr>
+  <th *ngFor="let header of data"
+    (click)="sortBy(header.id)"
+  >
+    <span class="GridHeader__Title">{{header.title}}</span>
+    <span *ngIf="header.id === gridSort.sortProperty"
+      class="GridHeader__Sort">
+      <i class="arrow" [ngClass]="{'arrow--down': !gridSort.reverse, 'arrow--up': gridSort.reverse}"></i>
+    </span>
+  </th>
+</tr>

@@ -1,0 +1,9 @@
+<div class="GridPagination">
+  <span *ngFor="let page of _pages; let i = index"
+        class="GridPagination__Item"
+       [ngClass]="{ 'active': page.active }"
+       (click)="pageChanged.emit(i)"
+  >
+    {{i + 1}}
+  </span>
+</div>

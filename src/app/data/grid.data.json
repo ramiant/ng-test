@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "name": "Marian",
+      "age": 24,
+      "gender": true
+    },
+    {
+      "name": "Florentina",
+      "age": 24,
+      "gender": false
+    },
+    {
+      "name": "Sergiu",
+      "age": 23,
+      "gender": true
+    },
+    {
+      "name": "Alexandra",
+      "age": 28,
+      "gender": false
+    },
+    {
+      "name": "Peter",
+      "age": 58,
+      "gender": true
+    },
+    {
+      "name": "Brian",
+      "age": 40,
+      "gender": true
+    }
+  ],
+  "headers": [
+    {
+      "id": "name",
+      "title": "Name",
+      "sortable": true
+    },
+    {
+      "id": "age",
+      "title": "Age",
+      "sortable": false
+    },
+    {
+      "id": "gender",
+      "title": "Gender",
+      "sortable": true
+    }
+  ]
+}
+

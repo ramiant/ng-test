@@ -1,0 +1,17 @@
+@import "../grid.variables.styl"
+
+.GridPagination
+  width $tableWidth
+  display flex
+  justify-content space-around
+
+  &__Item
+    cursor pointer
+    font-size 16px
+
+    &.active
+      font-weight bold
+      transform scale(1.6)
+
+:host
+  display: contents;

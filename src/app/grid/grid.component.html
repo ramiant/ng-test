@@ -1,0 +1,25 @@
+<div>
+  <app-grid-page-selector
+    [totalRecords]="_totalRecords"
+    (pageSizeChange)="onPageSizeChanged($event)"
+  ></app-grid-page-selector>
+  <table>
+    <app-grid-header
+      [data]="_headers"
+      [gridSort]="_sort"
+      (sort)="onSort($event)"
+    ></app-grid-header>
+    <tbody>
+      <app-grid-item
+        *ngFor="let element of records"
+        [data]="element"
+        [order]="_order"
+      ></app-grid-item>
+    </tbody>
+  </table>
+  <app-grid-pagination
+    [currentPage]="_currentPage"
+    [totalPages]="totalPages"
+    (pageChanged)="onPageChanged($event)"
+  ></app-grid-pagination>
+</div>
